@@ -1,0 +1,41 @@
+# Ignore data folder containing PDFs
+data/
+
+# Ignore virtual environment folder
+env/
+
+# Ignore model folder but track specific files
+model/*.pdf
+!model/ins.txt
+
+# Ignore large model files (adjust as necessary for file size limits)
+model/*.bin
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore environment variables
+.env
+
+# Ignore static files except for styles and images
+static/*.jpeg
+static/*.png
+static/*.gif
+
+# Ignore Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# Track important Python files and application logic
+!app.py
+!setup.py
+!template.py
+!store_index.py
+
+# Requirements and templates should not be ignored
+!requirements.txt
+!templates/chat.html
+
+# Ignore unnecessary OS files
+.DS_Store
+Thumbs.db
